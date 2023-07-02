@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<script>
-    function updatemenu() {
-        if (document.getElementById('responsive-menu').checked == true) {
-            document.getElementById('menu').style.borderBottomRightRadius = '0';
-            document.getElementById('menu').style.borderBottomLeftRadius = '0';
-        } else {
-            document.getElementById('menu').style.borderRadius = '10px';
-        }
-    }
-
-</script>
 <html>
 <head>
     <link href="/css/basic.css" rel="stylesheet" />
     <link href="/css/menu.css" rel="menu" />
+    <script>
+        function updatemenu() {
+            if (document.getElementById('responsive-menu').checked == true) {
+                document.getElementById('menu').style.borderBottomRightRadius = '0';
+                document.getElementById('menu').style.borderBottomLeftRadius = '0';
+            } else {
+                document.getElementById('menu').style.borderRadius = '10px';
+            }
+        }
+
+    </script>
 </head>
 <body>
     <nav id='menu'>
