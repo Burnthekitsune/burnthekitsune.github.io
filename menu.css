@@ -1,5 +1,5 @@
 #menu {
-    background: #8100CC;
+    background: #6200a3;
     color: #FFF;
     height: 45px;
     padding-left: 18px;
@@ -38,7 +38,7 @@
 
     #menu li a:hover {
         color: #0099CC;
-        background: #5A008F;
+        background: #53018a;
     }
 
     #menu input {
