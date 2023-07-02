@@ -1,7 +1,31 @@
 <!DOCTYPE html>
+<script>
+    function updatemenu() {
+        if (document.getElementById('responsive-menu').checked == true) {
+            document.getElementById('menu').style.borderBottomRightRadius = '0';
+            document.getElementById('menu').style.borderBottomLeftRadius = '0';
+        } else {
+            document.getElementById('menu').style.borderRadius = '10px';
+        }
+    }
+
+</script>
 <html>
 <body>
-<h1>Hello</h1>
-<p>Stuff is still in the works! Come back some other time!</p>
+    <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+            <li><a href='https://emberkitsune.gay/'>Home</a></li>
+            <li>
+                <a class='dropdown-arrow' href='http://'>Random Stuff</a>
+                <ul class='sub-menus'>
+                    <li><a href='https://emberkitsune.gay/puzzle'>Puzzle (tba)</a></li>
+                </ul>
+            </li>
+            <li><a href='https://emberkitsune.gay/links'>Links</a></li>
+        </ul>
+    </nav>
+    <h1>Hello</h1>
+    <p>Stuff is still in the works! Come back some other time!</p>
 </body>
 </html>
