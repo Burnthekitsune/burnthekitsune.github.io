@@ -2,33 +2,13 @@
 <html>
 <head>
     <link href="basic.css" rel="stylesheet" />
-    <link href="menu.css" rel="stylesheet" />
-    <script>
-        function updatemenu() {
-            if (document.getElementById('responsive-menu').checked == true) {
-                document.getElementById('menu').style.borderBottomRightRadius = '0';
-                document.getElementById('menu').style.borderBottomLeftRadius = '0';
-            } else {
-                document.getElementById('menu').style.borderRadius = '10px';
-            }
-        }
-
-    </script>
 </head>
 <body>
-    <nav id='menu'>
-        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
-        <ul>
-            <li><a href='https://emberkitsune.gay/'>Home</a></li>
-            <li>
-                <a class='dropdown-arrow'>Random Stuff</a>
-                <ul class='sub-menus'>
-                    <li><a href='https://emberkitsune.gay/puzzle'>Puzzle (tba)</a></li>
-                </ul>
-            </li>
-            <li><a href='https://emberkitsune.gay/links'>Links</a></li>
-        </ul>
-    </nav>
+    <div w3-include-html="nav.html"></div>
+    <script type="text/javascript" src="nav.js"></script>
+    <script>
+        includeHTML();
+    </script>
     <h1>Links go here</h1>
     <p>They will be added with time</p>
     <ul>
