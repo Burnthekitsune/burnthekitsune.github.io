@@ -3,8 +3,9 @@
     "",
     "\\img",
     "\\img\\buttons",
-    "\\nsfw"
+    "\\nsfw",
+    "\\random"
   ],
-  "SelectedNode": "\\img\\buttons\\telstarcat_button.gif",
+  "SelectedNode": "\\random",
   "PreviewInSolutionExplorer": false
 }
