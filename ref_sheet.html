@@ -16,6 +16,19 @@
                 ref_image.style.width = '11274px'
             }
         }
+
+function resizeImage2() {
+            var ref2_image = document.getElementById('ref2');
+            var ref2_image_height = document.getElementById('ref2').height;
+            if (ref2_image_height == '5000') {
+                ref2_image.style.height = '500px'
+                ref2_image.style.width = '1127px'
+            }
+            else {
+                ref2_image.style.height = '5967px'
+                ref2_image.style.width = '8855px'
+            }
+        }
     </script>
     <meta content="Ember Ref Sheet" property="og:title" />
     <meta content="https://emberkitsune.gay/ref_sheet" property="og:url" />
@@ -37,6 +50,11 @@
     <h5>Click image for full view</h5>
     <h6>Warning, very large</h6>
     <img id="ref" src="img/ember_ref.png" alt="A ref sheet of Ember." height="500" width="1127" onclick="resizeImage();" />
+    <h1>Ember's Supplemental Ref Sheet</h1>
+    <h4>Optional Add-ons</h4>
+    <h5>Click image for full view</h5>
+    <h6>Warning, very large</h6>
+    <img id="ref2" src="img/ember_suplimental_ref.png" alt="A ref sheet of Ember." height="500" width="1127" onclick="resizeImage2();" />
     <h6>Art drawn by <a href="https://www.furaffinity.net/user/shoomiboop/">shoomiboop</a></h6>
 </body>
 </html>
