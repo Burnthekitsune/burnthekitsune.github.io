@@ -1,8 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Maybe a puzzle will be here someday</title>
+    <title>Password</title>
     <link href="/basic.css" rel="stylesheet" />
+    <script>
+        if (window.location.hash.substring(1) == "wrong") {
+            alert("Wrong Passcode, sorry");
+        }
+    </script>
+    <script>
+        function enterCode() {
+
+            var digit1 = document.getElementById("digit1").value;
+            var digit2 = document.getElementById("digit2").value;
+            var digit3 = document.getElementById("digit3").value;
+
+            var url = "https://tailmaw.gay/puzzle/page1#" + digit1 + digit2 + digit3;
+
+            window.location.replace(url);
+
+            return false;
+        }
+    </script>
 </head>
 <body>
     <div w3-include-html="/nav.html"></div>
@@ -10,6 +29,14 @@
     <script>
         includeHTML();
     </script>
-    <p>Nothing here yet.</p>
+    <h1>To start the puzzle, please enter the code</h1>
+    <p>Enter the passcode</p>
+    <form onsubmit="enterCode();">
+        <input type="number" id="digit1" name="digit1" min="0" max="9" value="0">
+        <input type="number" id="digit2" name="digit2" min="0" max="9" value="0">
+        <input type="number" id="digit3" name="digit3" min="0" max="9" value="0">
+        <p></p>
+        <input type="submit" value="Enter Code">
+    </form>
 </body>
 </html>
